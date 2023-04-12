@@ -1,0 +1,89 @@
+/* ============================================================  CONTAINER  ========================================================================*/
+
+.captcha-container {
+  width: 550px;
+  height: 300px;
+  max-width: 75vw;
+  background: linear-gradient(#21b5d3,#0099bd);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  animation: slideInLeft 0.3s;
+}
+
+/* ============================================================  HEADER  ========================================================================*/
+
+.captcha-container .header {
+  display: inherit;
+  justify-content: center;
+  margin-top: -50px;
+}
+.captcha-container .header img:hover {
+  filter: drop-shadow(rgba(255, 255, 255, 1) 0px 0px 10px);
+  cursor: pointer;
+}
+
+/* ============================================================  BODY  ========================================================================*/
+
+.captcha-container .body {
+  display: inherit;
+  flex-flow: column;
+}
+
+.captcha-container .body p {
+  font-size: 14px;
+  font-family: "Akkurat";
+  color: whitesmoke;
+  margin-left: 30px;
+  margin-bottom: -5px;
+}
+
+/* ============================================================  FOOTER  ========================================================================*/
+
+.captcha-container .footer {
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+
+.captcha-container .footer img {
+  background-color: #108bab;
+  border-radius: 10%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  margin-top: 25px;
+  overflow: auto;
+  animation: slideInLeft 0.6s;  
+}
+
+.captcha-container .footer img:hover {
+  border: 3px solid greenyellow;
+}
+
+/* ============================================================  ANIMATIONS  ========================================================================*/
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ============================================================  MEDIA QUERIES   ========================================================================*/
+
+@media only screen and (max-width: 650px) {
+  .captcha-container {
+    max-width: 95vw;
+    max-height: 45vh;
+  }
+
+  .captcha-container .footer img {
+    max-width: 42px;
+    max-height: 42px;
+  }
+}
+
+/* ============================================================  END  ========================================================================*/

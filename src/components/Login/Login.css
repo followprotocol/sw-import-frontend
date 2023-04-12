@@ -1,0 +1,165 @@
+/* ============================================================  CONTAINER  ========================================================================*/
+
+.login-container {
+  width: 400px;
+  height: 490px;
+  background: linear-gradient(#21b5d3,#0099bd);
+  border-radius: 8px;
+  border: 1px solid #3ba8c3;
+  display: flex;
+  flex-direction: column;
+  animation: slideInLeft 0.3s;
+}
+
+/* ============================================================  HEADER  ========================================================================*/
+
+.login-container .header {
+  display: inherit;
+  justify-content: center;
+  margin-top: -50px;
+}
+.login-container .header img:hover {
+  filter: drop-shadow(rgba(255, 255, 255, 1) 0px 0px 10px);
+  cursor: pointer;
+}
+
+/* ============================================================  BODY  ========================================================================*/
+
+.login-container .body {
+  display: inherit;
+  flex-direction: column;
+  flex: 70%;
+}
+
+.login-container .body .h1 {
+  text-align: center;
+  font-size: 15px;
+  margin: 5px;
+  font-family: "Akkurat";
+  color: #ffff;
+  margin-bottom: 15px;
+}
+
+.login-container .body .info{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-left: 40px;
+  border-radius: 8px;
+  width: 80%;
+  flex: 1;
+  background-color: #108bab;
+}
+
+.login-container .body .info .p {
+  font-size: 13px;
+  font-family: "Akkurat";
+  color: #ffff;
+  /* text-align: left; */
+  /* margin-left: 25px; */
+}
+
+.login-container .body .form {
+  display: inherit;
+  flex-direction: column;
+  padding: 1em;
+  padding-right: 1.5em;
+}
+
+.login-container .body .li {
+  display: inherit;
+  padding: .3em;
+  padding-right: 1.5em;
+}
+
+.login-container .body .label {
+  font-family: "Akkurat";
+  font-size: 13px;
+  color: whitesmoke;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.login-container .body .input {
+  font-size: 13px;
+  margin-left: 5px;
+  padding-left: 8px;
+  border: 0px;
+  border-radius: 10px;
+  width: 210px;
+  height: 20px;
+  color: rgb(80, 80, 80);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.login-container .body .a {
+  text-align: center;
+  font-family: "Akkurat";
+  font-size: 13px;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ============================================================  FOOTER  ========================================================================*/
+
+.login-container .footer {
+  flex: 14%;
+  display: inherit;
+  justify-content: center;
+}
+
+.login-container .footer .orange-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 140px;
+  height: 36px;
+  /* font-weight: 500; */
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: "Akkurat-Bold";
+  border: 0px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.65);
+  background: linear-gradient(#ffbb52 40%,#ff9800 50%,#ff9900 60%,#ffd286);
+}
+.login-container .footer .orange-button:active{
+  border-top: 1px solid gray;
+}
+.login-container .footer .orange-button:hover{
+  background: linear-gradient(#fdca7e 40%,#ffb340 50%,#ffb340 60%,#fdd496);
+}.login-container .footer .orange-button:active{
+  background: linear-gradient(#ffbb54 40%,#ff9900 50%,#ff9900 60%,#ffd290);
+}
+
+/* ============================================================  ANIMATIONS  ========================================================================*/
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ============================================================  MEDIA QUERIES   ========================================================================*/
+
+@media only screen and (max-width: 650px) {
+  .login-container {
+    max-width: 95vw;
+    max-height: 55vh;
+  }
+}
+
+/* ============================================================  END  ========================================================================*/

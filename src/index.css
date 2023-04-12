@@ -1,0 +1,35 @@
+* {
+  outline: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: url(/bg.png) fixed;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.grecaptcha-badge{
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: "Akkurat";
+  src: url("./assets/fonts/Akkurat.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Akkurat-Bold";
+  src: url("./assets/fonts/Akkurat-Bold.ttf") format("truetype");
+}

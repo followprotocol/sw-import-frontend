@@ -1,0 +1,176 @@
+/* ============================================================  CONTAINER  ========================================================================*/
+
+.import-container {
+  width: 560px;
+  height: 430px;
+  background: linear-gradient(#21b5d3,#0099bd);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  animation: slideInLeft 0.3s;
+}
+
+/* ============================================================  HEADER  ========================================================================*/
+
+.import-container .header {
+  display: inherit;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.import-container .header img:hover {
+  filter: drop-shadow(rgba(255, 255, 255, 1) 0px 0px 10px);
+  cursor: pointer;
+}
+
+/* ============================================================  STATUS  ========================================================================*/
+
+.import-container .status {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  margin-top: 60px;
+}
+
+.import-container #loading {
+  height: 29px;
+  width: 29px;
+  animation: rotation 0.5s infinite linear;
+}
+
+.import-container #error {
+  height: 48px;
+  width: 48px;
+}
+
+.import-container .status h1 {
+  font-family: "Akkurat-Bold";
+  font-size: 13px;
+  color: white;
+  margin-top: 15px;
+}
+
+/* ============================================================  BODY  ========================================================================*/
+
+.import-container .body {
+  display: inherit;
+  flex-direction: column;
+  flex: 70%;
+  animation: slideInLeft 0.6s;
+}
+
+.import-container .body .form {
+  display: inherit;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-left: 10px;
+  
+}
+
+.import-container .body .form .avatar {
+  margin-top: -35px;
+}
+
+.import-container .body .form .details .li {
+  display: inherit;
+  padding: 3px;
+}
+
+.import-container .body .form .img {
+  height: 13px;
+  width: 13px;
+}
+
+.import-container .body .form .img:hover {
+  cursor: pointer;
+}
+
+.import-container .body .li .label {
+  text-align: center;
+  font-family: "Akkurat";
+  font-size: 13px;
+  color: whitesmoke;
+  padding: 5px 4px 6px 7px;
+  margin-top: -50px;
+  margin-left: 5px;
+}
+
+.import-container .body .p {
+  font-size: 13px;
+  font-family: "Akkurat";
+  color: #ffff;
+  text-align: left;
+  width: 92%;
+  margin-left: 25px;
+}
+
+/* ============================================================  FOOTER  ========================================================================*/
+
+.import-container .footer {
+  flex: 20%;
+  display: inherit;
+  justify-content: center;
+  animation: slideInLeft 0.6s;
+}
+
+.import-container .footer .orange-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 160px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Akkurat-Bold";
+  border: 0px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.65);
+  background: linear-gradient(#ffbb52 40%,#ff9800 50%,#ff9900 60%,#ffd286);
+}
+.import-container .footer .orange-button:active{
+  border-top: 1px solid gray;
+}
+.import-container .footer .orange-button:hover{
+  background: linear-gradient(#fdca7e 40%,#ffb340 50%,#ffb340 60%,#fdd496);
+}.import-container .footer .orange-button:active{
+  background: linear-gradient(#ffbb54 40%,#ff9900 50%,#ff9900 60%,#ffd290);
+}
+
+/* ============================================================  ANIMATIONS  ========================================================================*/
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-1900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================================  MEDIA QUERIES   ========================================================================*/
+
+/* ============================================================  MEDIA QUERIES   ========================================================================*/
+
+@media only screen and (max-width: 650px) {
+  .import-container {
+    max-width: 95vw;
+    max-height: 55vh;
+  }
+}
+
+
+/* ============================================================  END  ========================================================================*/
