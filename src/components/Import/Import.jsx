@@ -21,8 +21,8 @@ const Import = () => {
   const [sex, setsex] = useState("");
   const [cl, setcl] = useState("");
   const [itemsCount, setitemsCount] = useState("");
-  const [totalItemsGoldValue, settotalItemsGoldValue] = useState("");
-  const [totalItemsTokensValue, settotalItemsTokensValue] = useState("");
+  const [totalGoldNetworth, settotalGoldNetworth] = useState("");
+  const [totalTokenNetworth, settotalTokenNetworth] = useState("");
 
   const sessionId = useBearStore((state) => state.sessionId);
   const authToken = useBearStore((state) => state.authToken);
@@ -49,8 +49,8 @@ const Import = () => {
           setsex(resp.data.detail.sex)
           setcl(resp.data.detail.cl)
           setitemsCount(resp.data.detail.itemsCount)
-          settotalItemsGoldValue(resp.data.detail.totalItemsGoldValue)
-          settotalItemsTokensValue(resp.data.detail.totalItemsTokensValue)
+          settotalGoldNetworth(resp.data.detail.totalGoldNetworth)
+          settotalTokenNetworth(resp.data.detail.totalTokenNetworth)
           setStatus("Success");
         }
         else{
@@ -132,11 +132,11 @@ const Import = () => {
                 </li>
                 <li className="li">
                   <img src={gold} className="img" alt="info" />
-                  <label className="label">Total Gold Networth: {totalItemsGoldValue}</label>
+                  <label className="label">Total Gold Networth: {totalGoldNetworth}</label>
                 </li>
                 <li className="li">
                   <img src={token} className="img" alt="info" />
-                  <label className="label">Total Token Networth: {totalItemsTokensValue}</label>
+                  <label className="label">Total Token Networth: {totalTokenNetworth}</label>
                 </li>
               </div>
             </form>
