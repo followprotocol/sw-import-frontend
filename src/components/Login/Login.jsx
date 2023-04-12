@@ -44,7 +44,6 @@ const Login = () => {
         if (resp.data.success === true){
           toast.success("success", {id: myToast});
           setsessionID(resp.data.swsid)
-          console.log(resp.data.swsid)
           setTimeout(() => {
             setcurrentPage("Captcha")
           }, 2000)

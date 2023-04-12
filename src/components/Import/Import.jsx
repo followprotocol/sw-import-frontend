@@ -128,7 +128,7 @@ const Import = () => {
                 </li>
                 <li className="li">
                   <img src={info} className="img" alt="info" />
-                  <label className="label">Citizen Level: {cl} (NOT ACCURATE, FIX IN API)</label>
+                  <label className="label">Citizen Level: {cl}</label>
                 </li>
                 <li className="li">
                   <img src={gold} className="img" alt="info" />
